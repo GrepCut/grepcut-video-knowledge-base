@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: If you use this knowledge base, please cite it using the metadata from this file.
+title: GrepCut video knowledge base
+type: dataset
+authors:
+  - name: GrepCut
+license: Apache-2.0
+url: https://grepcut.com
+date-released: "2026-01-01"
+keywords:
+  - video
+  - video-editing
+  - grepcut
+  - converters
+  - markdown
+preferred-citation:
+  type: generic
+  title: GrepCut video knowledge base
+  authors:
+    - name: GrepCut
+  year: 2026
+  url: https://grepcut.com
+  license: Apache-2.0

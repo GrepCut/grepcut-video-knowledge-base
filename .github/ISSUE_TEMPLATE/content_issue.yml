@@ -1,0 +1,47 @@
+name: Content issue
+description: Report a mistake in a markdown page
+title: "[CONTENT] "
+labels: ["content"]
+body:
+  - type: dropdown
+    id: page-type
+    attributes:
+      label: Page type
+      options:
+        - product
+        - converter
+        - tool
+        - guide
+        - other
+    validations:
+      required: true
+  - type: input
+    id: locale
+    attributes:
+      label: Locale
+      description: Language folder of the page.
+      placeholder: e.g. en, pl, de
+    validations:
+      required: true
+  - type: input
+    id: slug
+    attributes:
+      label: Slug or path
+      description: File path under the locale, without the locale prefix if you prefer.
+      placeholder: e.g. tools/video-trimmer.md or faq.md
+    validations:
+      required: true
+  - type: textarea
+    id: what-is-wrong
+    attributes:
+      label: What is wrong
+      description: Quote or describe the incorrect copy.
+    validations:
+      required: true
+  - type: textarea
+    id: suggested-fix
+    attributes:
+      label: Suggested fix
+      description: The corrected wording, if you have it.
+    validations:
+      required: false
